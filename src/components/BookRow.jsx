@@ -5,7 +5,7 @@ const BookRow = ({ book, deleteBook }) => {
       <td>{book.title}</td>
       <td>{book.author}</td>
       <td onClick={() => deleteBook(book.number)}>
-        <img src="/icons/trash.svg" className="trash" />
+        <img src="./icons/trash.svg" className="trash" />
       </td>
     </tr>
   );
