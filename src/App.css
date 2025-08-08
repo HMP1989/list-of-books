@@ -1,0 +1,67 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.books {
+  background-image: url("/images/library.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+}
+
+.books::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+}
+
+
+.form-container,
+.view-container {
+  background: #102f44;
+  width: 48.5%;
+
+}
+
+.trash {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+
+  .form-container,
+  .view-container {
+    width: 100%;
+  }
+}
